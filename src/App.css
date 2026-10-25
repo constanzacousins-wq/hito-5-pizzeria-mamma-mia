@@ -39,7 +39,7 @@
   height: 250px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./assets/header.jpg");
+    url("./assets/Header.jpg");
   background-size: cover;
   background-position: center;
   color: white;
