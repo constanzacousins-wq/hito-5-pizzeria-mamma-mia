@@ -57,6 +57,18 @@ Abrir la dirección local indicada por Vite en el navegador.
 
 La autenticación y el cierre de sesión todavía no están implementados. Se utiliza información estática según los requerimientos del Hito 5.
 
+
+## Demo del proyecto
+
+Puedes ver la Pizzería Mamma Mía funcionando aquí:
+
+🍕 [Ver demo en GitHub Pages](https://constanzacousins-wq.github.io/hito-5-pizzeria-mamma-mia/)
+
+## Repositorio
+
+[Ver código en GitHub](https://github.com/constanzacousins-wq/hito-5-pizzeria-mamma-mia)
+
+
 ## Autoría
 
 Proyecto académico desarrollado para Desafío Latam.
