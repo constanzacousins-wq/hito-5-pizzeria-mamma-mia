@@ -7,7 +7,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/hito-5-pizzeria-mamma-mia">
       <App />
     </BrowserRouter>
   </StrictMode>,
