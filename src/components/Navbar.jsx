@@ -1,28 +1,40 @@
+
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const total = 25000;
-  const token = false;
 
   return (
     <nav className="navbar">
       <div className="navbar-left">
         <span className="brand">Pizzería Mamma Mia!</span>
 
-        <button>🍕 Home</button>
+        <Link to="/">
+          <button>🍕 Home</button>
+        </Link>
 
-        {token ? (
-          <>
-            <button>🔓 Profile</button>
-            <button>🔒 Logout</button>
-          </>
-        ) : (
-          <>
-            <button>🔐 Login</button>
-            <button>🔐 Register</button>
-          </>
-        )}
+        <Link to="/login">
+          <button>🔐 Login</button>
+        </Link>
+
+        <Link to="/register">
+          <button>🔐 Register</button>
+        </Link>
+
+        <Link to="/profile">
+          <button>🔓 Profile</button>
+        </Link>
+
+        <Link to="/404">
+          <button>404</button>
+        </Link>
       </div>
 
-      <button>🛒 Total: ${total.toLocaleString("es-CL")}</button>
+      <Link to="/cart">
+        <button>
+          🛒 Total: ${total.toLocaleString("es-CL")}
+        </button>
+      </Link>
     </nav>
   );
 };

@@ -1,25 +1,33 @@
 
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Pizza from "./views/Pizza";
-import "./App.css";
 
-// import Home from "./views/Home";
-// import Cart from "./components/Cart";
-// import Login from "./components/Login";
-// import Register from "./components/Register";
+import Home from "./pages/Home";
+import Pizza from "./pages/Pizza";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Profile from "./pages/Profile";
+import NotFound from "./pages/NotFound";
+
+import "./App.css";
 
 function App() {
   return (
     <>
       <Navbar />
 
-      {/* <Home /> */}
-      {/* <Login /> */}
-      {/* <Register /> */}
-      {/* <Cart /> */}
-
-      <Pizza />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/pizza/p001" element={<Pizza />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/404" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
 
       <Footer />
     </>
