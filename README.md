@@ -1,79 +1,64 @@
-
-# 🍕 Hito 4 - Pizzería Mamma Mía
-
-Proyecto desarrollado para el Bootcamp Full Stack JavaScript de Desafío Latam.
-
-## Demo
-
-[Ver Pizzería Mamma Mía](https://constanzacousins-wq.github.io/hito-4-pizzeria-mamma-mia/)
+# 🍕 Pizzería Mamma Mía — Hito 5
 
 ## Descripción
 
-Aplicación web desarrollada con React y Vite que permite consumir una API de pizzas utilizando fetch, useState y useEffect.
+Proyecto desarrollado para el Hito 5 del módulo React del Bootcamp Full Stack JavaScript de Desafío Latam.
 
-Este hito incorpora el consumo de datos desde una API externa para mostrar el catálogo de pizzas y la información individual de una pizza.
-
-## Funcionalidades
-
-- Home.jsx: consume la API y muestra seis tarjetas de pizzas.
-- Pizza.jsx: consume la API y muestra una pizza individual.
-- Visualización de nombre, precio, ingredientes, imagen y descripción.
-- Uso de useEffect para realizar las peticiones.
-- Diseño responsive.
-
-Siguiendo las instrucciones del ejercicio, App.jsx muestra la vista individual Pizza.jsx. El componente Home.jsx también está implementado y puede activarse desde App.jsx.
+En esta etapa se implementa React Router para permitir la navegación entre las distintas páginas de la aplicación Pizzería Mamma Mía, sin necesidad de recargar el navegador.
 
 ## Tecnologías utilizadas
 
 - React
 - JavaScript
+- React Router DOM v6
 - Vite
-- CSS
-- Fetch API
-- GitHub Pages
-- Render
+- HTML y CSS
 
-## API
+## Funcionalidades
 
-Backend publicado en Render:
+- Visualización del catálogo de pizzas.
+- Página de detalle de una pizza.
+- Formularios de registro e inicio de sesión.
+- Vista del carrito de compras.
+- Página de perfil de usuario.
+- Página de error 404 personalizada.
+- Navegación mediante React Router.
 
-https://hito-4-pizzeria-api.onrender.com
+## Rutas implementadas
 
-Endpoints utilizados:
+| Ruta | Página |
+|---|---|
+| `/` | Home |
+| `/register` | Registro |
+| `/login` | Inicio de sesión |
+| `/cart` | Carrito |
+| `/pizza/p001` | Detalle de pizza |
+| `/profile` | Perfil de usuario |
+| `/404` | Página no encontrada |
+| Cualquier ruta inexistente | Página 404 |
 
-- GET /api/pizzas
-- GET /api/pizzas/p001
+## Instalación y ejecución
 
-La API utiliza el plan gratuito de Render, por lo que puede tardar en responder después de un período de inactividad.
+Clonar el repositorio e instalar las dependencias:
 
-## Instalación local
-
-Clonar el repositorio:
-
-git clone https://github.com/constanzacousins-wq/hito-4-pizzeria-mamma-mia.git
-
-Ingresar al proyecto:
-
-cd hito-4-pizzeria-mamma-mia
-
-Instalar dependencias:
-
+```bash
 npm install
+```
 
-Iniciar el proyecto:
+Iniciar el servidor de desarrollo:
 
+```bash
 npm run dev
+```
 
-## Repositorios
+Abrir la dirección local indicada por Vite en el navegador.
 
-Frontend:
-https://github.com/constanzacousins-wq/hito-4-pizzeria-mamma-mia
+## Nota
 
-Backend:
-https://github.com/constanzacousins-wq/hito-4-pizzeria-api
+La autenticación y el cierre de sesión todavía no están implementados. Se utiliza información estática según los requerimientos del Hito 5.
 
-## Autora
+## Autoría
 
-Constanza Cousins
+Proyecto académico desarrollado para Desafío Latam.
 
-Bootcamp Full Stack JavaScript - Desafío Latam
+**Bootcamp Full Stack JavaScript — Módulo React — Hito 5.**
